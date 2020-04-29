@@ -5,7 +5,7 @@ Let's Dockerize [TPOT](https://epistasislab.github.io/tpot/)!
 
 Imagine a quick and dirty [SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/). On your local.  In Docker.
 
-The following implements the [Digits dataset example](https://epistasislab.github.io/tpot/examples/) in the TPOT documentation.
+The following implements the ["Digits dataset example"](https://epistasislab.github.io/tpot/examples/) (i.e., MINST) in the TPOT documentation.
 
 I don't know the TPOT API well at all, so any errors of commission or omission are due to my inexperience with it.
 
@@ -78,8 +78,8 @@ Best pipeline: KNeighborsClassifier(XGBClassifier(input_matrix, learning_rate=1.
 
 ## Other Things
 
-Use `make docker-clean-unused` to nuke containers on your machine that aren't running.
+Use `make docker-clean-unused` to nuke containers on your machine that aren't running.  Watch out.
 
-Use `make docker-clean-all` to kill **all** containers, running or not.
+Use `make docker-clean-all` to kill **all** containers, running or not.  Careful.
 
 Use `make shell` to peek inside the container.
